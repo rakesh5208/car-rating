@@ -73,11 +73,11 @@ Rating
 .rating-bar:before{
     content: ' ';
     border: 8px solid rgba(255, 188,0);
-    animation: progress 1s linear 0.5ms;
     position: absolute;
     left: -8px;
     top: -8px;
     border-radius: 5px;
+    animation: progress 1s linear 0.5ms;
 }
 
 @keyframes progress{
@@ -112,12 +112,27 @@ meter
     border-top-left-radius: 114px;
     border-top-right-radius: 110px;
     border-bottom: none;
+    position: relative;
 }
 
 .meter>img{
-    margin-top: 90px;
-    margin-left: -50px;
+    margin-top: 87px;
+    margin-left: -75px;
     animation: transform 1s linear 0.5s;
     transform-origin: right;
     transform: rotate(30deg);
+}
+
+@keyframes transform{
+    0%{
+        transform: rotate(0);
+    }
+    0%{
+        transform: rotate(30deg);
+    }
+}
+
+#meter-canvas{
+    margin-top: -100px;
+    margin-left: 10px;
 }
